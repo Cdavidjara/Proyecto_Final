@@ -1,2 +1,3 @@
 <?php
-echo "Proyecto Taxi - OK";
+header('Location: login.php');
+exit;
