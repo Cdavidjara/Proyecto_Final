@@ -1,4 +1,3 @@
-	id	cliente_id	conductor_id	origen	destino	tarifa	estado	creado_en	
 <?php
 
 require_once __DIR__ . '/../Database/MySQLConnection.php';
@@ -131,7 +130,8 @@ class MySQLViajeRepository
             ':conductor' => $conductorId
         ]);
     }
-        // ======================================
+
+    // ======================================
     // CLIENTE: viaje activo (pendiente o asignado)
     // ======================================
     public function viajeActivoCliente(int $clienteId): ?array
